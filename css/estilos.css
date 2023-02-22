@@ -1,0 +1,162 @@
+@font-face {
+    font-family: 'Ubuntu', sans-serif;
+    src: url(../assets/fonts/Ubuntu-Medium.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor_general {
+    background-color: pink;
+    width: 100vw;
+    height: 100%;
+    font-family: 'ubuntu' , sans-serif;
+}
+
+.header {
+    width: 100%;
+}
+
+
+
+.contenido__video {
+    align-self: center;
+    padding: 10px;
+    width: 80vw;
+    height: 30vh;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+@media only screen and (min-width:600px) {
+    .contenido__video {
+        height: 70vh;
+        width: 70vw;
+    }
+}
+
+@media only screen and (min-width:1200px) {
+    .contenido__video {
+        height: 80vh;
+        width: 70vw;
+    }
+}
+
+
+.Catalogo {
+    width: 90%;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+.titulo-catalogo {
+    padding: 20px;
+}
+
+
+.disenios {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.disenios__card {
+    margin: 10px;
+    padding: 10px;
+}
+
+.imgcard {
+    width: 300px;
+    height: 350px;
+}
+
+@media only screen and (min-width:680px) {
+    .disenios {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+.piepagina {
+    width: 100vw;
+    height: 100%;
+    text-align: center;
+
+}
+
+.redes {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    padding-right: 38px;
+
+}
+
+.redes__iconos {
+    list-style: none;
+    padding: 10px;
+
+}
+
+
+.wp {
+    display: none;
+}
+
+@media only screen and (min-width:600px) {
+
+    .wp {
+        display: block;
+        height: 70px;
+        width: 70px;
+        position: fixed;
+        bottom: 30px;
+        right: 50px;
+    }
+
+}
+
+
+.Contenedor-carrito {
+    text-align: center;
+}
+
+
+.sesion,
+.registrate {
+    margin: 20px;
+    padding: 20px;
+}
+
+.Nosotros{
+    width: 100%;
+    text-align: center;
+}
+
+.Nosotros__contactos{
+   margin: 10px;
+   padding: 10px;
+}
+
+.tamaño-mapa{
+    width: 40vh;
+    height: 30vh;
+}
+
+@media only screen and (min-width:600px) {
+.tamaño-mapa{
+    width: 80vh;
+    height: 60vh;
+}
+}
+
+@media only screen and (min-width:1200px) {
+.tamaño-mapa {
+    width: 100vh;
+    height: 80vh;
+}
+}
