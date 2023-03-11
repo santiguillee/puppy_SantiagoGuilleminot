@@ -1,12 +1,12 @@
 @charset "UTF-8";
-@font-face {
-  font-family: 'Ubuntu', sans-serif;
-  src: url(../assets/fonts/Ubuntu-Medium.ttf); }
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
+
+@font-face {
+  font-family: 'Ubuntu', sans-serif;
+  src: url(../assets/fonts/Ubuntu-Medium.ttf); }
 
 .contenedor_general {
   background-color: pink;
@@ -17,75 +17,46 @@
 .header {
   width: 100%; }
 
+.puppy {
+  color: rgba(90, 8, 19, 0.781); }
+
 .contenido__video {
   align-self: center;
   padding: 10px;
   width: 80vw;
-  height: 30vh;
+  height: 70vh;
   margin: 20px auto;
   border-radius: 10px; }
 
-@media only screen and (min-width: 600px) {
-  .contenido__video {
-    height: 70vh;
-    width: 70vw; } }
-
-@media only screen and (min-width: 1200px) {
-  .contenido__video {
-    height: 80vh;
-    width: 70vw; } }
-
 .titulo-catalogo {
   padding: 20px; }
-
-.disenios {
-  display: flex;
-  flex-direction: column;
-  text-align: center; }
-
-.disenios__card {
-  margin: 10px;
-  padding: 10px; }
-
-.imgcard {
-  width: 300px;
-  height: 350px; }
+  .titulo-catalogo .disenios {
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
+    .titulo-catalogo .disenios .disenios__card {
+      margin: 10px;
+      padding: 10px; }
+      .titulo-catalogo .disenios .disenios__card .imgcard {
+        width: 300px;
+        height: 350px; }
+        .titulo-catalogo .disenios .disenios__card .imgcard .Contenedor-carrito {
+          text-align: center; }
 
 @media only screen and (min-width: 680px) {
+  .titulo-catalogo {
+    padding: 20px; }
   .disenios {
     flex-direction: row;
-    flex-wrap: wrap; } }
-
-.redes {
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-  justify-content: center;
-  padding-right: 38px; }
-
-.redes__iconos {
-  list-style: none;
-  padding: 10px; }
-
-.wp {
-  display: none; }
-
-@media only screen and (min-width: 600px) {
-  .wp {
-    display: block;
-    height: 70px;
-    width: 70px;
-    position: fixed;
-    bottom: 30px;
-    right: 50px; } }
-
-.Contenedor-carrito {
-  text-align: center; }
-
-.sesion,
-.registrate {
-  margin: 20px;
-  padding: 20px; }
+    flex-wrap: wrap; }
+  .disenios__card {
+    margin: 10px;
+    padding: 10px; }
+  .imgcard {
+    width: 300px;
+    height: 350px; }
+  .Contenedor-carrito {
+    text-align: center; } }
 
 .Nosotros__contactos {
   margin: 10px;
@@ -105,5 +76,86 @@
     width: 100vh;
     height: 80vh; } }
 
+.sesion,
+.registrate {
+  margin: 20px;
+  padding: 20px; }
+
+.boton, .boton--aceptar, .boton--cancelar, .boton--iniciar {
+  margin-top: 1vh; }
+
+.boton--aceptar {
+  text-shadow: green;
+  color: green;
+  border: 1px solid black; }
+
+.boton--cancelar {
+  text-shadow: red;
+  color: red;
+  border: 1px solid black; }
+
+.boton--iniciar {
+  text-shadow: #b33b4f;
+  color: #b33b4f;
+  border: 1px solid black; }
+
+.redes {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  padding-right: 38px; }
+
+.redes__iconos {
+  list-style: none;
+  padding: 10px; }
+
 .derechosres {
   text-align: center; }
+
+.wp {
+  display: none; }
+
+@media only screen and (min-width: 680px) {
+  .titulo-catalogo {
+    padding: 20px; }
+    .titulo-catalogo .disenios {
+      flex-direction: row;
+      flex-wrap: wrap; }
+      .titulo-catalogo .disenios .disenios__card {
+        margin: 10px;
+        padding: 10px; }
+        .titulo-catalogo .disenios .disenios__card .imgcard {
+          width: 300px;
+          height: 350px; }
+          .titulo-catalogo .disenios .disenios__card .imgcard .Contenedor-carrito {
+            text-align: center; } }
+
+@media only screen and (min-width: 600px) {
+  .contenido__video {
+    height: 70vh;
+    width: 70vw; } }
+
+@media only screen and (min-width: 1200px) {
+  .contenido__video {
+    height: 80vh;
+    width: 70vw; } }
+
+@media only screen and (min-width: 600px) {
+  .wp {
+    display: block;
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    bottom: 30px;
+    right: 50px; } }
+
+@media only screen and (min-width: 600px) {
+  .tamaño-mapa {
+    width: 80vh;
+    height: 60vh; } }
+
+@media only screen and (min-width: 1200px) {
+  .tamaño-mapa {
+    width: 100vh;
+    height: 80vh; } }

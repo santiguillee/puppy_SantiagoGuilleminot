@@ -1,0 +1,34 @@
+.sesion,
+.registrate {
+    margin: 20px;
+    padding: 20px;
+}
+
+
+.boton {
+    margin-top: 1vh;
+   
+}
+
+.boton--aceptar {
+    @extend .boton;
+    text-shadow: green;
+    color: green;
+    border: 1px solid black;
+    
+}
+
+.boton--cancelar {
+    @extend .boton;
+    text-shadow: red;
+    color: red;
+    border: 1px solid black;
+    
+}
+
+.boton--iniciar {
+    @extend .boton;
+    text-shadow: rgb(179, 59, 79);
+    color: rgb(179, 59, 79);
+    border: 1px solid black;
+}

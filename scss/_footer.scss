@@ -1,0 +1,20 @@
+.redes {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    padding-right: 38px;
+}
+
+.redes__iconos {
+    list-style: none;
+    padding: 10px;
+}
+
+.derechosres{
+    text-align: center;
+}
+
+.wp {
+    display: none;
+}
